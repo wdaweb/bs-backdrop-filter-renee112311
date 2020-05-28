@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        body {
+            background: url('./pillar.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: #FFF;
+            text-shadow: 0 0 8px rgb(27, 27, 27);
+            font-family: "微軟正黑體";
+        }
+
+        span {
+            font-size: 2rem;
+        }
+
+        #scrollF .col-md-auto,
+        #scrollF .row {
+            border: 1px solid #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px #333;
+        }
+
+
+        #scrollF .row {
+            height: 100px;
+        }
+
+        #scrollF .row:first-of-type {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #scrollF .row:last-of-type {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #gray {
+            backdrop-filter: grayscale(1);
+        }
+
+        #bright {
+            backdrop-filter: brightness(1.5);
+        }
+
+        #blur {
+            backdrop-filter: blur(5px);
+        }
+
+        #con {
+            backdrop-filter: contrast(0.8);
+        }
+
+        #invert {
+            backdrop-filter: invert(0.7);
+        }
+
+        #opa {
+            backdrop-filter: opacity(0.4);
+        }
+
+        #spe {
+            backdrop-filter: sepia(0.4);
+        }
+
+        #sat {
+            backdrop-filter: saturate(1.8);
+        }
+
+        #hue {
+            backdrop-filter: hue-rotate(120deg);
+        }
+
+        @media (min-width: 768px) {
+            body {
+                overflow-y: hidden;
+            }
+
+            #scrollF {
+                height: 100%;
+                flex-wrap: nowrap;
+                justify-content: start;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            #scrollF .col-md-auto {
+                height: 70%;
+                width: 500px;
+                padding: 0;
+                margin: 0;
+            }
+
+            #scrollF .row:first-of-type {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 10px;
+            }
+
+            #scrollF .row:last-of-type {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+
+        @media (max-width: 767.8px) {
+            #scrollF {
+                padding: 1rem;
+                margin: 0;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+
+    <title>scrollfilter</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0 vh-100 ">
+        <class id="scrollF" class="row">
+            <div class="row col-md-auto"><span> backdrop-filter</span><span>效果</span></div>
+            <div class="row col-md-auto">backdrop-filter: none</div>
+            <div id="gray" class="row col-md-auto">backdrop-filter: grayscale(1)</div>
+            <div id="bright" class="row col-md-auto">backdrop-filter: brightness(1.5)</div>
+            <div id="blur" class="row col-md-auto">backdrop-filter: blur(5px)</div>
+            <div id="con" class="row col-md-auto">backdrop-filter: contrast(0.8)</div>
+            <div id="invert" class="row col-md-auto">backdrop-filter: invert(0.7)</div>
+            <div id="opa" class="row col-md-auto">backdrop-filter: opacity(0.4)</div>
+            <div id="spe" class="row col-md-auto">backdrop-filter: sepia(0.4)</div>
+            <div id="sat" class="row col-md-auto">backdrop-filter: saturate(1.8)</div>
+            <div id="hue" class="row col-md-auto">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+
+
+    </div>
+
+    </class>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
